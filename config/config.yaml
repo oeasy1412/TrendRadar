@@ -47,7 +47,7 @@ notification:
     time_range:
       start: "20:00"  # 推送时间窗口开始（北京时间）
       end: "22:00"    # 推送时间窗口结束（北京时间）
-    once_per_day: true  # 每天在时间窗口内只推送一次，如果 false，则窗口内每次执行都推送
+    once_per_day: false  # 每天在时间窗口内只推送一次，如果 false ，则窗口内每次执行都推送
     push_record_retention_days: 7  # 推送记录保留天数
 
   # 请务必妥善保管好 webhooks，不要公开
@@ -76,25 +76,25 @@ weight:
 
 # name 可以定义任意名称，只具有显示作用，即使项目运行了几天后，忽然改掉 name 也不会影响代码的正常运行
 platforms:
-  - id: "toutiao"
-    name: "今日头条"
-  - id: "baidu"
-    name: "百度热搜"
-  - id: "wallstreetcn-hot"
-    name: "华尔街见闻"
-  - id: "thepaper"
-    name: "澎湃新闻"
   - id: "bilibili-hot-search"
     name: "bilibili 热搜"
+  - id: "weibo"
+    name: "微博"
+  - id: "zhihu"
+    name: "知乎"
+  - id: "tieba"
+    name: "贴吧"
+  - id: "baidu"
+    name: "百度热搜"
+  - id: "douyin"
+    name: "抖音"
+  - id: "toutiao"
+    name: "今日头条"
+  - id: "thepaper"
+    name: "澎湃新闻"
+  - id: "wallstreetcn-hot"
+    name: "华尔街见闻"
   - id: "cls-hot"
     name: "财联社热门"
   - id: "ifeng"
     name: "凤凰网"
-  - id: "tieba"
-    name: "贴吧"
-  - id: "weibo"
-    name: "微博"
-  - id: "douyin"
-    name: "抖音"
-  - id: "zhihu"
-    name: "知乎"
